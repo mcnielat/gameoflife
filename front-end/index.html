@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #error-message {
+            color: crimson;
+        }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" 
+            integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" 
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+    <h1>Conway's Game of Life</h1>
+
+    <div id="sketch-container">
+        <!-- The p5.js sketch will be placed here -->
+    </div>
+
+    <div>
+        <button id="startButton">Start</button>
+        <button id="stopButton" disabled>Stop</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <span id="error-message"></span>
+</body>
+</html>
